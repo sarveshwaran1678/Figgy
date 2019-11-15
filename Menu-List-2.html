@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://localhost:8080/Miggy/menu-item/menu-list.jsp?num=2&res=235 -->
+<html class=" sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Page Description -->
+        
+        <title>Menu-List</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <link rel="apple-touch-icon" href="./images/icon.png">
+
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./Menu-List-2_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./Menu-List-2_files/menu-list.css">
+        <link rel="stylesheet" href="./Menu-List-2_files/plugins.css">
+        <link rel="stylesheet" href="./Menu-List-2_files/style.css">
+        <link rel="stylesheet" href="./index_files/material-design-iconic-font.min.css">
+        <!-- Cusom css -->
+        <link rel="stylesheet" href="./Menu-List-2_files/custom.css">
+
+        <!-- Modernizer js -->
+        <script src="./Menu-List-2_files/modernizr-3.5.0.min.js.download"></script><style id="dark-reader-style" type="text/css">/* Common theme */
+html,
+body,
+:not([style*="background-color:"]) {
+    background-color: rgb(22, 25, 28) !important;
+}
+html,
+body,
+:not([style*="color:"]) {
+    color: rgb(165, 156, 138) !important;
+}
+h1:not([style*="color:"]),
+h2:not([style*="color:"]),
+h3:not([style*="color:"]),
+h4:not([style*="color:"]),
+h5:not([style*="color:"]),
+h6:not([style*="color:"]) {
+    color: rgb(241, 141, 103) !important;
+}
+cite:not([style*="color:"]) {
+    color: rgb(128, 200, 147) !important;
+}
+input:not([style*="background-color:"]),
+textarea:not([style*="background-color:"]),
+button:not([style*="background-color:"]),
+[role="button"] {
+    background-color: rgb(37, 52, 67) !important;
+}
+input:not([style*="background-color:"]):hover,
+textarea:not([style*="background-color:"]):hover,
+button:not([style*="background-color:"]):hover,
+[role="button"]:hover {
+    background-color: rgb(34, 58, 81) !important;
+}
+input:not([style*="background-color:"]):active, input:not([style*="background-color:"]):focus,
+textarea:not([style*="background-color:"]):active, textarea:not([style*="background-color:"]):focus,
+button:not([style*="background-color:"]):active, button:not([style*="background-color:"]):focus,
+[role="button"]:active, [role="button"]:focus {
+    background-color: rgb(33, 60, 86) !important;
+}
+a:not([style*="color:"]) {
+    color: rgb(128, 179, 200) !important;
+}
+a:not([style*="color:"]):hover {
+    color: rgb(142, 190, 214) !important;
+}
+a:not([style*="color:"]):active, a:not([style*="color:"]):focus {
+    color: rgb(155, 202, 228) !important;
+}
+:not([style*="border-color:"]),
+::before,
+::after {
+    border-color: rgb(83, 116, 134) !important;
+}
+div:empty {
+    background-color: rgb(22, 25, 28) !important;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(165, 156, 138) !important;
+}
+input:not([style*="background-image:"]),
+textarea:not([style*="background-image:"]) {
+    background-image: none !important;
+
+}
+
+.section-padding--lg{
+padding: 0px;
+
+}</style>
+
+
+        <script>
+
+            var request = new XMLHttpRequest();
+            // Ajax call to Asynchronously searching of element from search bar 
+            function searchInfo(value, res) {
+
+                //value = The value to be searched , res = The resturant ID
+                name = value;
+                resid = res;
+
+                //Call to Ajax.jsp
+                var url = "Ajax.jsp?val=" + name + "&resid=" + resid;
+                
+
+                //Returns the output of Ajax.jsp to 'mylocation' 
+                try {
+                    request.onreadystatechange = function () {
+                        if (request.readyState == 4) {
+                            var val = request.responseText;
+                            document.getElementById('mylocation').innerHTML = val;
+                        }
+                    }//end of function  
+                    request.open("GET", url, true);
+                    request.send();
+                } catch (e) {
+                    alert("Unable to connect to server");
+                }
+            }
+
+            request = new XMLHttpRequest();
+            // Ajax call to Asynchronously ADD element to cart
+            function add(value, cos) {
+
+                var food = value;
+                var cos_id = cos;
+                //food = menu-item-id , cos_id = Costumer_id
+                
+
+
+                //Call to pushcartAjax.jsp
+                var url = "../cart/pushcartAjax.jsp?food=" + food + "&cos=" + cos_id;
+
+                //Returns the output of pushcartAjax.jsp  
+                try {
+                    request.onreadystatechange = function () {
+                        if (request.readyState == 4) {
+                            // var val = request.responseText;
+                            //document.getElementById('para').innerHTML = val;
+                        }
+                    }//end of function  
+                    request.open("GET", url, true);
+                    request.send();
+                } catch (e) {
+                    alert("Unable to connect to server");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+
+        <!--
+            Navigation bar Configured at header.jsp
+        -->
+        
+
+
+
+
+
+
+
+    
+       <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicons 
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/icon.png">-->
+
+        <!-- Stylesheets 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/plugins.css">
+        <link rel="stylesheet" href="style.css">-->
+
+        <!-- Cusom css 
+        <link rel="stylesheet" href="css/custom.css">-->
+
+        <!-- Modernizer js
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
+        <style>
+            .main-photo{
+                background-color: black;
+            }
+        </style>
+    
+
+
+    
+    <header class="htc__header bg--white" style="position:sticky; top:0;z-index: 1001;background-color: rgb(22, 25, 28) " >
+        <!-- Start Mainmenu Area -->
+        <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 col-md-6 order-1 order-lg-1">
+                        <div class="logo">
+                            
+                            <a href="index.html">
+                               
+                               <img src="./Menu-List-2_files/foody.png" alt="logo images" style="position: absolute;width:170px;height:auto;
+                                     border-radius: 40px">
+                                
+                          
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-4 col-md-2 order-3 order-lg-2">
+                        <div class="main__menu__wrap">
+                            <nav class="main__menu__nav d-none d-lg-block" style="display: block;">
+                                <ul class="mainmenu">
+                                    <li class="drop"><a href="index.html">Home</a></li>
+                                    <li><a href="AboutUs.html">About</a></li>
+                                    <li class="drop"><a href="Resturant-List.html">Restaurant List</a></li>
+                                    <!--<li class="drop"><a href="menu-list.html">Menu</a>
+                                        <ul class="dropdown__menu">
+                                            <li><a href="menu-item/menu-list.jsp">Menu List</a></li>
+                                        </ul>
+                                    </li>-->
+                                    
+                                    
+                                    <li class="drop"><a href="cart.html">Cart Page</a>
+                                      <!--  <ul class="dropdown__menu">
+                                            <li><a href="service/service.jsp">Service</a></li>
+                                            <li><a href="cart/cart.jsp">Cart Page</a></li>
+                                            <li><a href="contact/contact.jsp">Contact Page</a></li>
+                                        </ul>-->
+                                    </li>
+                                    <li><a href="History.html">History</a></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
+                        <div class="header__right d-flex justify-content-end">
+                           <div class="log__in">
+                                <a target="_self" href="login.html"><i class="zmdi zmdi-account-o"></i></a>
+                            </div>
+                            <div class="shopping__cart">
+                                <a target="_self" href="cart.html"><i class="zmdi zmdi-shopping-basket"></i></a>
+                                <div class="shop__qun">
+                                    
+                                            
+                                    <span>3</span>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="mobile-menu d-block d-lg-none"></div>
+                <!-- Mobile Menu -->
+            </div>
+        </div>
+            </header>
+   <!-- <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>-->
+
+
+
+
+
+        <!--
+            Search Input Field For Ajax call to myFunction() and searchInfo()
+            myFunction() expands the search bar when in focus
+            searchInfo(this.value,<Res_ID>) Asynchronous call to search for menu items 
+            
+            <Res_ID>= Resturant_ID
+            this.value= the value being typed in the search input field
+        -->
+        <div class="container h-100">
+            <div class="d-flex justify-content-center h-100 myown">
+                <div class="searchbar">
+                    <span>Search:</span>
+                    <input class="search_input" type="text" name="name" placeholder="Enter Text Here" onfocusin="myFunction()" onkeyup="searchInfo(this.value,235)">  
+                    <a class="search_icon"><img style="width:40px;height: 40px;" src="./Menu-List-2_files/abc.png"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+            Output of Ajax call to  Ajax.jsp is Asynchronously displayed here 
+        -->
+        <div id="mylocation" style="display:none;">
+        </div>     
+
+
+
+        <!--
+           Start of Wrapper Class
+        -->
+        <div class="wrapper" id="wrapper">
+
+            <!-- Start section -->   
+            <section class="food__menu__grid__area section-padding--lg">
+
+                <!--Start Wraping All the elements inside a container--> 
+                <div class="container">
+                    <div class="row mt--30">
+                        <div class="col-lg-12">
+                            <div class="fd__tab__content tab-content" id="nav-tabContent">
+                                <!-- Start Single Content -->
+                                <div class="food__list__tab__content tab-pane fade show active" id="nav-all" role="tabpanel">
+                                    <!-- Start Single Food -->
+                                    
+
+                                    <!-- Start of Menu-Item -->
+                                    <div class="single__food__list d-flex wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">  
+                                        <!--
+                                            The start of left part which cantains
+                                            Image Component
+                                            src=Image url                                         
+                                        -->
+                                        <div class="food__list__thumb">
+                                            <a>
+                                                <img src="./Menu-List-2_files/default.png" alt="list food images" style="width:250px; height:250px">
+                                            </a>
+                                        </div>
+                                        <!--
+                                            The end of left part which contains
+                                            Image Component  
+                                        -->
+
+                                        <!-- 
+                                            The start Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                        <div class="food__list__inner d-flex align-items-center justify-content-between">
+                                            <div class="food__list__details">
+                                                <!-- 
+                                                    Menu-Item Name
+                                                -->                                               
+                                                <h2><a>New York Cheesecake (Pack Of 2)</a></h2>
+
+                                                <!--
+                                                   Content For Menu-Item 
+                                                -->
+                                                <p>Lorem ipsum dolor sit aLorem ipsum dolor sit amet, consectetu adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolmagna aliqua. enim ad minim veniam, quis nomagni dolores eos qnumquam.</p>
+
+                                                <!--
+                                                    Add to cart button
+                                                    Button is disabled on click and 
+                                                    Its innerHTML is changed to 'ADDED TO CART'
+                                                    add(<F_ID,Cos_ID) is called on clicked
+                                                    add() is an Ajax function which adds to cart asynchronously
+                                                    F_ID= menu-list-food ID 
+                                                    Cos_ID=Coustomer ID
+                                                -->
+                                                <div class="list__btn">
+                                                    <button class="food__btn grey--btn theme--hover" onclick="add(3163,1);
+                                                            this.disabled = true;
+                                                            this.innerHTML = &#39;Added To Cart&#39;;" id="added" style="border: none;">Order Now</button>
+                                                </div>
+                                            </div>
+                                            <!-- End of content, image , add to cart button -->               
+
+                                            <!--Start of Price and Rating -->
+                                            <div class="food__rating">
+                                                <!--
+                                                    Price of Food
+                                                -->
+                                                <div class="list__food__prize">
+                                                    <span>₹ 420</span>
+                                                </div>
+
+                                                <!--
+                                                    Rating of Food Item
+                                                    <i class="zmdi zmdi-star"></i> gives out of a colored star
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li> gives greyed out star     
+                                                -->
+                                                <ul class="rating">
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li>
+                                                </ul>
+
+                                            </div>
+                                            <!--End of Price and Rating -->
+                                        </div>
+                                        <!-- 
+                                            The end of Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                    </div>
+                                    <!--End of menu Item -->
+                                    
+
+                                    <!-- Start of Menu-Item -->
+                                    <div class="single__food__list d-flex wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">  
+                                        <!--
+                                            The start of left part which cantains
+                                            Image Component
+                                            src=Image url                                         
+                                        -->
+                                        <div class="food__list__thumb">
+                                            <a>
+                                                <img src="./Menu-List-2_files/default.png" alt="list food images" style="width:250px; height:250px">
+                                            </a>
+                                        </div>
+                                        <!--
+                                            The end of left part which contains
+                                            Image Component  
+                                        -->
+
+                                        <!-- 
+                                            The start Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                        <div class="food__list__inner d-flex align-items-center justify-content-between">
+                                            <div class="food__list__details">
+                                                <!-- 
+                                                    Menu-Item Name
+                                                -->                                               
+                                                <h2><a>Paneer Biryani Bowl</a></h2>
+
+                                                <!--
+                                                   Content For Menu-Item 
+                                                -->
+                                                <p>Lorem ipsum dolor sit aLorem ipsum dolor sit amet, consectetu adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolmagna aliqua. enim ad minim veniam, quis nomagni dolores eos qnumquam.</p>
+
+                                                <!--
+                                                    Add to cart button
+                                                    Button is disabled on click and 
+                                                    Its innerHTML is changed to 'ADDED TO CART'
+                                                    add(<F_ID,Cos_ID) is called on clicked
+                                                    add() is an Ajax function which adds to cart asynchronously
+                                                    F_ID= menu-list-food ID 
+                                                    Cos_ID=Coustomer ID
+                                                -->
+                                                <div class="list__btn">
+                                                    <button class="food__btn grey--btn theme--hover" onclick="add(3161,1);
+                                                            this.disabled = true;
+                                                            this.innerHTML = &#39;Added To Cart&#39;;" id="added" style="border: none;">Order Now</button>
+                                                </div>
+                                            </div>
+                                            <!-- End of content, image , add to cart button -->               
+
+                                            <!--Start of Price and Rating -->
+                                            <div class="food__rating">
+                                                <!--
+                                                    Price of Food
+                                                -->
+                                                <div class="list__food__prize">
+                                                    <span>₹ 350</span>
+                                                </div>
+
+                                                <!--
+                                                    Rating of Food Item
+                                                    <i class="zmdi zmdi-star"></i> gives out of a colored star
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li> gives greyed out star     
+                                                -->
+                                                <ul class="rating">
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li>
+                                                </ul>
+
+                                            </div>
+                                            <!--End of Price and Rating -->
+                                        </div>
+                                        <!-- 
+                                            The end of Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                    </div>
+                                    <!--End of menu Item -->
+                                    
+
+                                    <!-- Start of Menu-Item -->
+                                    <div class="single__food__list d-flex wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">  
+                                        <!--
+                                            The start of left part which cantains
+                                            Image Component
+                                            src=Image url                                         
+                                        -->
+                                        <div class="food__list__thumb">
+                                            <a>
+                                                <img src="./Menu-List-2_files/default.png" alt="list food images" style="width:250px; height:250px">
+                                            </a>
+                                        </div>
+                                        <!--
+                                            The end of left part which contains
+                                            Image Component  
+                                        -->
+
+                                        <!-- 
+                                            The start Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                        <div class="food__list__inner d-flex align-items-center justify-content-between">
+                                            <div class="food__list__details">
+                                                <!-- 
+                                                    Menu-Item Name
+                                                -->                                               
+                                                <h2><a>Rich Red Velvet Pastry (Pack of 2)</a></h2>
+
+                                                <!--
+                                                   Content For Menu-Item 
+                                                -->
+                                                <p>Lorem ipsum dolor sit aLorem ipsum dolor sit amet, consectetu adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolmagna aliqua. enim ad minim veniam, quis nomagni dolores eos qnumquam.</p>
+
+                                                <!--
+                                                    Add to cart button
+                                                    Button is disabled on click and 
+                                                    Its innerHTML is changed to 'ADDED TO CART'
+                                                    add(<F_ID,Cos_ID) is called on clicked
+                                                    add() is an Ajax function which adds to cart asynchronously
+                                                    F_ID= menu-list-food ID 
+                                                    Cos_ID=Coustomer ID
+                                                -->
+                                                <div class="list__btn">
+                                                    <button class="food__btn grey--btn theme--hover" onclick="add(3165,1);
+                                                            this.disabled = true;
+                                                            this.innerHTML = &#39;Added To Cart&#39;;" id="added" style="border: none;">Order Now</button>
+                                                </div>
+                                            </div>
+                                            <!-- End of content, image , add to cart button -->               
+
+                                            <!--Start of Price and Rating -->
+                                            <div class="food__rating">
+                                                <!--
+                                                    Price of Food
+                                                -->
+                                                <div class="list__food__prize">
+                                                    <span>₹ 220</span>
+                                                </div>
+
+                                                <!--
+                                                    Rating of Food Item
+                                                    <i class="zmdi zmdi-star"></i> gives out of a colored star
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li> gives greyed out star     
+                                                -->
+                                                <ul class="rating">
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li>
+                                                </ul>
+
+                                            </div>
+                                            <!--End of Price and Rating -->
+                                        </div>
+                                        <!-- 
+                                            The end of Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                    </div>
+                                    <!--End of menu Item -->
+                                    
+
+                                    <!-- Start of Menu-Item -->
+                                    <div class="single__food__list d-flex wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">  
+                                        <!--
+                                            The start of left part which cantains
+                                            Image Component
+                                            src=Image url                                         
+                                        -->
+                                        <div class="food__list__thumb">
+                                            <a>
+                                                <img src="./Menu-List-2_files/default.png" alt="list food images" style="width:250px; height:250px">
+                                            </a>
+                                        </div>
+                                        <!--
+                                            The end of left part which contains
+                                            Image Component  
+                                        -->
+
+                                        <!-- 
+                                            The start Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                        <div class="food__list__inner d-flex align-items-center justify-content-between">
+                                            <div class="food__list__details">
+                                                <!-- 
+                                                    Menu-Item Name
+                                                -->                                               
+                                                <h2><a>Vegetable Biryani</a></h2>
+
+                                                <!--
+                                                   Content For Menu-Item 
+                                                -->
+                                                <p>Lorem ipsum dolor sit aLorem ipsum dolor sit amet, consectetu adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolmagna aliqua. enim ad minim veniam, quis nomagni dolores eos qnumquam.</p>
+
+                                                <!--
+                                                    Add to cart button
+                                                    Button is disabled on click and 
+                                                    Its innerHTML is changed to 'ADDED TO CART'
+                                                    add(<F_ID,Cos_ID) is called on clicked
+                                                    add() is an Ajax function which adds to cart asynchronously
+                                                    F_ID= menu-list-food ID 
+                                                    Cos_ID=Coustomer ID
+                                                -->
+                                                <div class="list__btn">
+                                                    <button class="food__btn grey--btn theme--hover" onclick="add(3160,1);
+                                                            this.disabled = true;
+                                                            this.innerHTML = &#39;Added To Cart&#39;;" id="added" style="border: none;">Order Now</button>
+                                                </div>
+                                            </div>
+                                            <!-- End of content, image , add to cart button -->               
+
+                                            <!--Start of Price and Rating -->
+                                            <div class="food__rating">
+                                                <!--
+                                                    Price of Food
+                                                -->
+                                                <div class="list__food__prize">
+                                                    <span>₹ 450</span>
+                                                </div>
+
+                                                <!--
+                                                    Rating of Food Item
+                                                    <i class="zmdi zmdi-star"></i> gives out of a colored star
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li> gives greyed out star     
+                                                -->
+                                                <ul class="rating">
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li><i class="zmdi zmdi-star"></i></li>
+                                                    <li class="rating__opasity"><i class="zmdi zmdi-star"></i></li>
+                                                </ul>
+
+                                            </div>
+                                            <!--End of Price and Rating -->
+                                        </div>
+                                        <!-- 
+                                            The end of Right part which contains
+                                            Price
+                                            Ratings
+                                            Food_name
+                                            Small Content 
+                                            Add to cart button
+                                        -->
+                                    </div>
+                                    <!--End of menu Item -->
+                                    
+                                    <!-- End Single Food -->
+                                </div>
+                                <!-- End Single Content -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    Start Pagination
+                    -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="food__pagination d-flex justify-content-center align-items-center mt--130">
+                                
+                                <li><a href="Menu-List.html"><i class="zmdi zmdi-chevron-left"></i></a></li>
+                                        
+                                <li><a href="Menu-List.html">1</a></li>
+                                       
+                                <li class="active"><a href="Menu-List-2.html">2</a></li>
+                                    
+
+
+                                
+                            </ul>
+                        </div>
+                    </div> 
+                    <!--
+                        End Pagination
+                    -->
+                </div>
+                <!--End Wraping All the elements inside a container-->
+            </section>
+            <!-- End section -->                
+        </div>
+        <!--
+           End of Wrapper Class
+        -->
+        
+        
+
+<br><br>
+	
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<link rel="apple-touch-icon" href="./images/icon.png">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="./Menu-List-2_files/bootstrap.min(1).css">
+	<link rel="stylesheet" href="./Menu-List-2_files/plugins(1).css">
+    <link rel="stylesheet" href="./Menu-List-2_files/style(1).css">
+    <link rel="stylesheet" href="./index_files/material-design-iconic-font.min.css">
+	<!-- Cusom css -->
+   <link rel="stylesheet" href="./Menu-List-2_files/custom(1).css">
+
+	<!-- Modernizer js -->
+	<script src="./Menu-List-2_files/modernizr-3.5.0.min.js(1).download"></script>
+
+
+<!-- Start Footer Area -->
+<footer class="footer__area footer--1">
+    <div class="footer__wrapper bg__cat--1 section-padding--lg">
+        <div class="container">
+            <div class="row">
+                <!-- Start Single Footer -->
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="footer">
+                        <h2 class="ftr__title">About Figgy</h2>
+                        <div class="footer__inner">
+                            <div class="ftr__details">
+                                <p>Lorem ipsum dolor sit amconsectetur adipisicing elit,</p>
+                                <div class="ftr__address__inner">
+                                    <div class="ftr__address">
+                                        <div class="ftr__address__icon">
+                                            <i class="zmdi zmdi-home"></i>
+                                        </div>
+                                        <div class="frt__address__details">
+                                            <p>Yelahanka-Bangalore-India,560097</p>
+                                        </div>
+                                    </div>
+                                    <div class="ftr__address">
+                                        <div class="ftr__address__icon">
+                                            <i class="zmdi zmdi-phone"></i>
+                                        </div>
+                                        <div class="frt__address__details">
+                                            <p><a href="">+088 01673-453290</a></p>
+                                            <p><a href="">+088 01773-458290</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="ftr__address">
+                                        <div class="ftr__address__icon">
+                                            <i class="zmdi zmdi-email"></i>
+                                        </div>
+                                        <div class="frt__address__details">
+                                            <p><a href="">Figgy@email.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="social__icon">
+                                    <li><a href=""><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href=""><i class="zmdi zmdi-google"></i></a></li>
+                                    <li><a href=""><i class="zmdi zmdi-instagram"></i></a></li>
+                                    <li><a href=""><i class="zmdi zmdi-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Footer -->
+                <!-- Start Single Footer -->
+                <div class="col-md-6 col-lg-3 col-sm-12 sm--mt--40">
+                    <div class="footer gallery">
+                        <h2 class="ftr__title">Our Gallery</h2>
+                        <div class="footer__inner">
+                            <ul class="sm__gallery__list">
+                                <li><a href=""><img src="./cart_files/1.jpg" alt="gallery images"></a></li>
+                                <li><a href=""><img src="./cart_files/2.jpg" alt="gallery images"></a></li>
+                                <li><a href=""><img src="./cart_files/3.jpg" alt="gallery images"></a></li>
+                                <li><a href=""><img src="./cart_files/4.jpg" alt="gallery images"></a></li>
+                                <li><a href=""><img src="./cart_files/5.jpg" alt="gallery images"></a></li>
+                                <li><a href=""><img src="./cart_files/6.jpg" alt="gallery images"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Footer -->
+                <!-- Start Single Footer -->
+                <div class="col-md-6 col-lg-3 col-sm-12 md--mt--40 sm--mt--40">
+                    <div class="footer">
+                        <h2 class="ftr__title">Opening Time</h2>
+                        <div class="footer__inner">
+                            <ul class="opening__time__list">
+                                <li>Saturday<span>.......</span>9am to 11pm</li>
+                                <li>Sunday<span>.......</span>9am to 11pm</li>
+                                <li>Monday<span>.......</span>9am to 11pm</li>
+                                <li>Tuesday<span>.......</span>9am to 11pm</li>
+                                <li>Wednesday<span>.......</span>9am to 11pm</li>
+                                <li>Thursday<span>.......</span>9am to 11pm</li>
+                                <li>Friday<span>.......</span>9am to 11pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Footer -->
+                <!-- Start Single Footer -->
+                <div class="col-md-6 col-lg-3 col-sm-12 md--mt--40 sm--mt--40">
+                    <div class="footer">
+                        <h2 class="ftr__title">Latest Post</h2>
+                        <div class="footer__inner">
+                            <div class="lst__post__list">
+                                <div class="single__sm__post">
+                                    <div class="sin__post__thumb">
+                                        <a href="">
+                                            <img src="./cart_files/1(1).jpg" alt="blog images">
+                                        </a>
+                                    </div>
+                                    <div class="sin__post__details">
+                                        <h6><a href="">Chicken Shawarma </a></h6>
+                                        <p>Lordo loram consecte turadip isicing</p>
+                                    </div>
+                                </div>
+                                <div class="single__sm__post">
+                                    <div class="sin__post__thumb">
+                                        <a href="">
+                                            <img src="./cart_files/2(1).jpg" alt="blog images">
+                                        </a>
+                                    </div>
+                                    <div class="sin__post__details">
+                                        <h6><a href="">Fruits Desert</a></h6>
+                                        <p>Lordo loramcon secte turadipi sicing</p>
+                                    </div>
+                                </div>
+                                <div class="single__sm__post">
+                                    <div class="sin__post__thumb">
+                                        <a href="">
+                                            <img src="./cart_files/3(1).jpg" alt="blog images">
+                                        </a>
+                                    </div>
+                                    <div class="sin__post__details">
+                                        <h6><a href="">Vanilla Pastry</a></h6>
+                                        <p>Lordo loramcon secte turadip isicing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Footer -->
+            </div>
+        </div>
+    </div>
+    <div class="copyright bg--theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="copyright__inner">
+                        <div class="cpy__right--left">
+                          
+                        </div>
+                        <div class="cpy__right--right">
+                            <a href="">
+                                <img src="./cart_files/2.png" alt="payment images">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Area -->
+        <!-- JS Files -->
+	<script src="./Menu-List-2_files/jquery-3.2.1.min.js.download"></script>
+	<script src="./Menu-List-2_files/popper.min.js.download"></script>
+	<script src="./Menu-List-2_files/bootstrap.min.js.download"></script>
+	<script src="./Menu-List-2_files/plugins.js.download"></script>
+	<script src="./Menu-List-2_files/active.js.download"></script>
+
+
+
+        <!--
+           Linking the script tags
+        -->
+        <script src="./Menu-List-2_files/jquery-3.2.1.min.js(1).download"></script>
+        <script src="./Menu-List-2_files/popper.min.js(1).download"></script>
+        <script src="./Menu-List-2_files/bootstrap.min.js(1).download"></script>
+        <script src="./Menu-List-2_files/plugins.js(1).download"></script>
+        <script src="./Menu-List-2_files/active.js(1).download"></script>
+        <script>
+                                                        // myFunction() displays 'mylocation' and hides 'wrapper' when triggered
+                                                        function myFunction() {
+                                                            document.getElementById("wrapper").style.display = "none";
+                                                            document.getElementById("mylocation").style.display = "block";
+                                                        }
+        </script>
+        
+    
+
+
+</body></html>

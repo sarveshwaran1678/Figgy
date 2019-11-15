@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://localhost:8080/Miggy/Resturant-List/Resturant-List.jsp?num=10 -->
+<html class=" sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- JQuery and Bootstrap linking -->
+        <script src="./List-10_files/jquery.min.js.download"></script>
+        <script src="./List-10_files/bootstrap.min.js.download"></script>
+        <script src="./List-10_files/jquery.min.js(1).download"></script>
+
+        <!-- meta data about page -->
+          
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <link rel="apple-touch-icon" href="./images/icon.png">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./List-10_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./List-10_files/plugins.css">
+        <link rel="stylesheet" href="./List-10_files/style.css">
+        <link rel="stylesheet" href="./List-10_files/plugins.css">
+        <link rel="stylesheet" href="./List-10_files/Resturant-List.css">
+        <link rel="stylesheet" href="./index_files/material-design-iconic-font.min.css">
+
+        <!-- Custom css -->
+        <link rel="stylesheet" href="./List-10_files/custom.css">
+
+        <!-- Modernizer js -->
+        <script src="./List-10_files/modernizr-3.5.0.min.js.download"></script><style id="dark-reader-style" type="text/css">/* Common theme */
+html,
+body,
+:not([style*="background-color:"]) {
+    background-color: rgb(22, 25, 28) !important;
+}
+html,
+body,
+:not([style*="color:"]) {
+    color: rgb(165, 156, 138) !important;
+}
+h1:not([style*="color:"]),
+h2:not([style*="color:"]),
+h3:not([style*="color:"]),
+h4:not([style*="color:"]),
+h5:not([style*="color:"]),
+h6:not([style*="color:"]) {
+    color: rgb(241, 141, 103) !important;
+}
+cite:not([style*="color:"]) {
+    color: rgb(128, 200, 147) !important;
+}
+input:not([style*="background-color:"]),
+textarea:not([style*="background-color:"]),
+button:not([style*="background-color:"]),
+[role="button"] {
+    background-color: rgb(37, 52, 67) !important;
+}
+input:not([style*="background-color:"]):hover,
+textarea:not([style*="background-color:"]):hover,
+button:not([style*="background-color:"]):hover,
+[role="button"]:hover {
+    background-color: rgb(34, 58, 81) !important;
+}
+input:not([style*="background-color:"]):active, input:not([style*="background-color:"]):focus,
+textarea:not([style*="background-color:"]):active, textarea:not([style*="background-color:"]):focus,
+button:not([style*="background-color:"]):active, button:not([style*="background-color:"]):focus,
+[role="button"]:active, [role="button"]:focus {
+    background-color: rgb(33, 60, 86) !important;
+}
+a:not([style*="color:"]) {
+    color: rgb(128, 179, 200) !important;
+}
+a:not([style*="color:"]):hover {
+    color: rgb(142, 190, 214) !important;
+}
+a:not([style*="color:"]):active, a:not([style*="color:"]):focus {
+    color: rgb(155, 202, 228) !important;
+}
+:not([style*="border-color:"]),
+::before,
+::after {
+    border-color: rgb(83, 116, 134) !important;
+}
+div:empty {
+    background-color: rgb(22, 25, 28) !important;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(165, 156, 138) !important;
+}
+input:not([style*="background-image:"]),
+textarea:not([style*="background-image:"]) {
+    background-image: none !important;
+}</style>
+
+        <!-- Title -->
+        <title>Resturant List</title>
+        
+        
+
+        
+
+        <!-- Custom Styling -->
+        <style>
+             .dropdown-submenu {
+                 position: relative;
+             }
+ 
+             .dropdown-submenu .dropdown-menu {
+                 top: 0;
+                 left: 100%;
+                 margin-top: -1px;
+             }
+             .custom-search {
+	position: absolute;
+	right: 20px;
+	top: 1px;
+}
+#express-form-typeahead {
+	background-color: white;
+	background-position: 5px center;
+        background-image: url("../images/abc.png");
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+        z-index: 1003;
+	border: none;
+	cursor: pointer;
+	height: 40px;
+	margin: 3px 0;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	width: 0px;  
+}
+.cus ._3Ynv- {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px;
+}
+.cus{
+    position: relative;
+    
+}
+#express-form-typeahead:focus {
+	background-color: #fff;
+	border: 2px solid black;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+}
+.search-btn {
+  display: none;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+        </style>
+
+    </head>
+    <body>
+        
+
+        <!--
+            Navigation bar Configured at header.jsp
+        -->
+        <div id="myheader" style="position:sticky; top:0; z-index: 1001">
+            
+
+
+
+
+
+
+
+    
+       <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicons 
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/icon.png">-->
+
+        <!-- Stylesheets 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/plugins.css">
+        <link rel="stylesheet" href="style.css">-->
+
+        <!-- Cusom css 
+        <link rel="stylesheet" href="css/custom.css">-->
+
+        <!-- Modernizer js
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
+        <style>
+            .main-photo{
+                background-color: black;
+            }
+        </style>
+    
+
+
+    
+    <header class="htc__header bg--white" style="position:sticky; top:0;z-index: 1001">
+        <!-- Start Mainmenu Area -->
+        <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 col-md-6 order-1 order-lg-1">
+                        <div class="logo">
+                            
+                            <a href="index.html">
+                               
+                               <img src="./List-10_files/foody.png" alt="logo images" style="position: absolute;width:170px;height:auto;
+                                     border-radius: 40px">
+                                
+                          
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-4 col-md-2 order-3 order-lg-2">
+                        <div class="main__menu__wrap">
+                            <nav class="main__menu__nav d-none d-lg-block" style="display: block;">
+                                <ul class="mainmenu">
+                                    <li class="drop"><a href="index.html">Home</a></li>
+                                    <li><a href="AboutUs.html">About</a></li>
+                                    <li class="drop"><a href="Resturant-List.html">Restaurant List</a></li>
+                                    <!--<li class="drop"><a href="menu-list.html">Menu</a>
+                                        <ul class="dropdown__menu">
+                                            <li><a href="menu-item/menu-list.jsp">Menu List</a></li>
+                                        </ul>
+                                    </li>-->
+                                    
+                                    
+                                    <li class="drop"><a href="cart.html">Cart Page</a>
+                                      <!--  <ul class="dropdown__menu">
+                                            <li><a href="service/service.jsp">Service</a></li>
+                                            <li><a href="cart/cart.jsp">Cart Page</a></li>
+                                            <li><a href="contact/contact.jsp">Contact Page</a></li>
+                                        </ul>-->
+                                    </li>
+                                    <li><a href="History.html">History</a></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
+                        <div class="header__right d-flex justify-content-end">
+                            <div class="log__in">
+                                <a target="_self" href="login.html"><i class="zmdi zmdi-account-o"></i></a>
+                            </div>
+                            <div class="shopping__cart">
+                                <a target="_self" href="cart.html"><i class="zmdi zmdi-shopping-basket"></i></a>
+                                <div class="shop__qun">
+                                    
+                                            
+                                    <span>3</span>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="mobile-menu d-block d-lg-none"></div>
+                <!-- Mobile Menu -->
+            </div>
+        </div>
+            </header>
+   <!-- <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>-->
+
+
+
+        </div>
+
+        <!--
+            Output of Ajax call to Resturant-List.jsp is Asynchronously displayed here 
+            The output is filtered data of resturant based on SortID and Dir
+        -->
+        <div id="myloca" style="diplay:none;"></div>
+        
+        
+        
+
+        
+
+        <div></div>
+        
+        
+        <div id="myl" style="display:none;"></div>
+        <!-- Beginning of Resturant Body -->
+        <div class="_29kDH" id="wra" style="display: block;">
+
+            <!-- 
+                wrapper for all resturants + Top bar
+            -->
+            <div class="_1LV_f undefined" id="all_restaurants">
+
+                <!-- Left Side Space - Orange Color -->
+                <div class="_3LhmH">
+                </div>
+
+                <!-- Middle Space for displaying all resturant + Top bar - white color -->
+                <div class="_10p2">
+
+                    <!-- Start of Top Bar -->
+                    <div class="k4axS">
+                        <div class="_19Aso">
+                            <div class="_2LB31">
+                                <div class="_3IrNP">
+
+                                    <!-- Circle next to total number of resturants left of top bar-->
+                                    <div class="_1H8qJ">
+                                    </div>
+
+                                        
+
+
+
+                                    <!-- To Display Total Number Of Resturants left of top bar-->   
+                                    <div class="BZR3j">
+                                        381 restaurants
+                                    </div>
+
+                                    <!-- Components of 'Filter'  Ascending order and Desending Order  right of Top Bar-->
+                                    <div class="_3Ynv-">
+                                        
+                                        
+                                        
+                                        <!-- Filter component -->
+                                        <div class="_2-ofZ" style="cursor: default; border: none;margin: 0px;">
+                                            <span class="h0xOG">Filters : </span>
+                                        </div>
+                                        
+                                        
+
+                                        <!-- 
+                                            Ascending order Drop Down 
+                                            Can be sorted based on AvgPrice2,AvgDelTime and Ratings on click
+                                            func(this.value, SortID) Sorts the value based on sortid in  Ascending order
+                                            change() displays 'myloca' and hides 'wrapper' when triggered , ie Sorts the resturant in Resturant-List.jsp by ajax call and the output is displayed in 'myloca' and exsisting 'Wrap' is disappered
+                                        -->    
+                                        <div class="dropdown" id="wra">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Ascending Order
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu " style="margin: 0 0 0 -2rem;">
+                                                <li><button class="_2-ofZ" value="ASC" id="AvgPrice2" onclick="func(this.value, &#39;AvgPrice2&#39;,10);">Cost For Two</button></li>
+                                                <li><button class="_2-ofZ" value="ASC" id="AvgDelTime" onclick="func(this.value, &#39;AvgDelTime&#39;,10);">Delivery Time</button></li>
+                                                <li><button class="_2-ofZ" value="ASC" id="Rating" onclick="func(this.value, &#39;Rating&#39;,10);">Rating</button></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 
+                                            Descending order Drop Down 
+                                            Can be sorted based on AvgPrice2,AvgDelTime and Ratings onclick
+                                            func(this.value, SortID) Sorts the value based on sortid in  Descending order
+                                            change() displays 'myloca' and hides 'wrapper' when triggered , ie Sorts the resturant in Resturant-List.jsp by ajax call and the output is displayed in 'myloca' and exsisting 'Wrap' is disappered
+                                            butcus is custom class 
+                                        -->   
+                                        <div class="dropdown butcus">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Descending Order
+                                                <span class="caret"></span></button>
+                                            <ul class="dropdown-menu" style="margin: 0 0 0 -2rem;">
+                                                <li><button class="_2-ofZ" value="DESC" id="AvgPrice2" onclick="func(this.value, &#39;AvgPrice2&#39;,10);">Cost For Two</button></li>
+                                                <li><button class="_2-ofZ" value="DESC" id="AvgDelTime" onclick="func(this.value, &#39;AvgDelTime&#39;,10);">Delivery Time</button></li>
+                                                <li><button class="_2-ofZ" value="DESC" id="Rating" onclick="func(this.value, &#39;Rating&#39;,10);">Rating</button></li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <!--End of Components of 'Filter'  Ascending order and Desending Order  right of Top Bar-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Top Bar -->
+
+                    <!-- Start of Resturant List -->
+                    <div class="_2GhU5">
+
+                        <div>
+                            <div> 
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=63&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="The Thickshake Factory" width="254" height="160" src="./List-10_files/ea3dxf016nyshzkef2hx">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">The Thickshake Factory</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Beverages, Desserts, Juices">Beverages, Desserts, Juices</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>32 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹200 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=61&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="The Waffle Press" width="254" height="160" src="./List-10_files/g1phjd2glcozvdoc1gzy">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">The Waffle Press</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Desserts">Desserts</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>28 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹350 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">Free delight on all orders</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=82&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="The White Room" width="254" height="160" src="./List-10_files/y6esfr75zx6jco4swxwd">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">The White Room</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Desserts, American, Continental">Desserts, American, Continental</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.4</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>30 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹1000 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=26&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Tibbs Frankie" width="254" height="160" src="./List-10_files/Wow_momo__logo">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Tibbs Frankie</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Fast Food">Fast Food</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>28 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹200 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">30% off | Use coupon SWIGGY30</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=232&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Tiffanys" width="254" height="160" src="./List-10_files/cz0pggupkvpiq4staa8g">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <div class="IJsqo" style="background: rgb(58, 60, 65); color: rgb(255, 255, 255); border-color: rgb(30, 32, 35) transparent;">
+                                                        <div class="_1kXWW">Promoted</div>
+                                                    </div>
+                                                            
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Tiffanys</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="North Indian, South Indian, Chinese">North Indian, South Indian, Chinese</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>36 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹800 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">50% off on orders above 99</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=339&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Tillite&#39;s Arabic Kitchen" width="254" height="160" src="./List-10_files/qpa4t6saooxkfm8dzuei">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Tillite's Arabic Kitchen</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Arabian">Arabian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.2</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>56 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹400 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=2&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Truffles" width="254" height="160" src="./List-10_files/bkrl3ckz1tfmc7y4aoap">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Truffles</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="American">American</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.3</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>24 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹450 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">50% off | Use coupon SWIGGY50</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=239&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Tummy Tickler" width="254" height="160" src="./List-10_files/jeiyajmdfrjjaq8igkzx">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Tummy Tickler</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Indian, Chinese, Italian, Mughlai">Indian, Chinese, Italian, Mughlai</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>38 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹400 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=314&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Twiststick House" width="254" height="160" src="./List-10_files/vzvsezkjeyaqv77liwvh">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Twiststick House</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Chinese, North Indian, Continental, Fast Food, Italian, Beverages, Thai">Chinese, North Indian, Continental, Fast Food, Italian, Beverages, Thai</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>46 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹300 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">40% off | Use coupon SWIGGY40</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=96&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Ujwal Restaurant" width="254" height="160" src="./List-10_files/hehjipvyfwxuqg2f3zmx">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Ujwal Restaurant</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Andhra, Chinese, Coastal, North Indian, Seafood, South Indian">Andhra, Chinese, Coastal, North Indian, Seafood, South Indian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.4</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>34 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹450 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=155&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Urban Solace" width="254" height="160" src="./List-10_files/tchgt9auexfap8pt4dog">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Urban Solace</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="American, Continental">American, Continental</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>38 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=77&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="USA (UNIQUE SPICE OF ANDHRA)" width="254" height="160" src="./List-10_files/gyqwa3pbhekqqgtlh0kn">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">USA (UNIQUE SPICE OF ANDHRA)</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="North Indian">North Indian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>35 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹350 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">40% off on orders above 199</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=349&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="UTHRA" width="254" height="160" src="./List-10_files/vaykminfadhtgezafttr">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">UTHRA</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Beverages, Chinese, Desserts, Ice Cream, Italian, North Indian">Beverages, Chinese, Desserts, Ice Cream, Italian, North Indian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.1</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>48 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹350 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=342&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Utse Kitchen" width="254" height="160" src="./List-10_files/hui1l47gkhtaynfkphmz">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Utse Kitchen</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Chinese, Tibetan, Nepalese, Pan-Asian">Chinese, Tibetan, Nepalese, Pan-Asian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>44 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=5&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Vasudev Adigas" width="254" height="160" src="./List-10_files/adigas">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Vasudev Adigas</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="North Indian, Chinese, South Indian">North Indian, Chinese, South Indian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.2</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>30 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹200 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">30% off | Use coupon SWIGGY30</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=283&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Vinny&#39;s" width="254" height="160" src="./List-10_files/c9axtarqogaesg2zthav">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Vinny's</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Italian, Pizzas, Pastas">Italian, Pizzas, Pastas</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.2</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>36 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹800 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=378&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Vrat Ahaar by Falahaar &amp; Kota Kachori" width="254" height="160" src="./List-10_files/q8bo5qqakdf84rda7u4n">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Vrat Ahaar by Falahaar &amp; Kota Kachori</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="North Indian, Desserts, Fast Food">North Indian, Desserts, Fast Food</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.1</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>54 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹150 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">30% off | Use coupon SWIGGY30</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=142&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="WAFL" width="254" height="160" src="./List-10_files/vjxr3cjtnwlezbxq4tei">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <div class="IJsqo" style="background: rgb(58, 60, 65); color: rgb(255, 255, 255); border-color: rgb(30, 32, 35) transparent;">
+                                                        <div class="_1kXWW">Promoted</div>
+                                                    </div>
+                                                            
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">WAFL</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Desserts">Desserts</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>35 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹400 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">30% off | Use coupon SWIGGY30</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=158&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Wangs Kitchen" width="254" height="160" src="./List-10_files/mzzo8e91lzrfreax6ai7">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Wangs Kitchen</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Chinese">Chinese</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>36 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=201&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Watson&#39;s" width="254" height="160" src="./List-10_files/fof16rbdnttwru9gtzvf">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Watson's</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Fast Food">Fast Food</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>34 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹1000 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=186&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Wolf&#39;ish" width="254" height="160" src="./List-10_files/ogfwrsgeljbvgs2sjyw0">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Wolf'ish</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="American, Desserts, Italian, Beverages, Seafood, Thai">American, Desserts, Italian, Beverages, Seafood, Thai</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.4</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>29 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=37&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Wow! Momo" width="254" height="160" src="./List-10_files/Wow_momo__logo">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Wow! Momo</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Tibetan, Fast Food, Chinese, Snacks, Continental, Desserts">Tibetan, Fast Food, Chinese, Snacks, Continental, Desserts</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>33 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹300 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">40% off on orders above 99</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=368&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="XO Belgian Waffle" width="254" height="160" src="./List-10_files/d931qnozv3t2aqbubnb4">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">XO Belgian Waffle</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Desserts, Fast Food, Beverages">Desserts, Fast Food, Beverages</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.3</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>47 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹300 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=356&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Yogisthaan" width="254" height="160" src="./List-10_files/hf2yvroo4bcl6egm5o7v">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+                                                    <!-- Exclusive Sticker -->
+                                                    <div class="IJsqo" style="background: rgb(250, 74, 91); color: rgb(255, 255, 255); border-color: rgb(209, 42, 59) transparent;">
+                                                        <div class="_1kXWW">Exclusive</div>             
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Yogisthaan</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Healthy Food">Healthy Food</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.3</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>50 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹600 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=319&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Yumlane Pizza" width="254" height="160" src="./List-10_files/pa0mla6xumhijydfhntu">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Yumlane Pizza</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Fast Food, Italian, Mexican">Fast Food, Italian, Mexican</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>45 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹150 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">10% off on all orders</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=370&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="YumYumDilli" width="254" height="160" src="./List-10_files/i5e8ha6djmh911xhmaf3">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">YumYumDilli</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="North Indian, Biryani, Desserts, Beverages, Snacks">North Indian, Biryani, Desserts, Beverages, Snacks</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          4.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>48 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">40% off | Use coupon SWIGGY40</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=373&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="YumYumSouth" width="254" height="160" src="./List-10_files/tcfmu6wkrkfmkgkgtrts">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">YumYumSouth</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="South Indian, Seafood, Biryani, Beverages, Snacks">South Indian, Seafood, Biryani, Beverages, Snacks</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>48 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh">40% off | Use coupon SWIGGY40</span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=171&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="zaiqa the taste" width="254" height="160" src="./List-10_files/xzxvspdksifxw77ml31s">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">zaiqa the taste</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Fast Food, Indian">Fast Food, Indian</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>37 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹250 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+                                </div>
+
+                                                
+
+                                <!-- Starting Of a Row-->
+                                <div class="MZy1T" style="margin-bottom: 0px;">
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=210&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="Zodiac-Fortune Select JP Cosmos" width="254" height="160" src="./List-10_files/trvplmffldtrc9toqwbj">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">Zodiac-Fortune Select JP Cosmos</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="North Indian, South Indian, Chinese, Continental">North Indian, South Indian, Chinese, Continental</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>33 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹1500 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                    
+
+                                    <!--Start Resturant View -->
+                                    <div class="_3XX_A ">
+
+                                        <!-- Redirection to resturant menu-list onclick the element -->
+                                        <a href="Menu-List.html?res=221&amp;num=1" class="_1j_Yo">
+
+                                            <!--Start One Resturant content -->
+                                            <div class="_1HEuF">                                                                                          
+                                                <div class="_3FR5S">
+
+                                                    <!-- 
+                                                        Start Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Image of Resturant -->
+                                                    <div class="efp8s">
+                                                        <img class="_2tuBw _12_oN" alt="ZOROY LUXURY CHOCOLATES" width="254" height="160" src="./List-10_files/fvrrffxywlwe8sk8brei">
+                                                    </div>
+
+                                                    <!-- Promoted Sticker -->
+                                                    
+
+                                                    <!-- Contains Resturant Name and Description -->
+                                                    <div class="_3Ztcd">
+
+                                                        <!-- Resturant_name -->
+                                                        <div class="nA6kb">ZOROY LUXURY CHOCOLATES</div>
+
+                                                        <!-- Description -->
+                                                        <div class="_1gURR" title="Desserts">Desserts</div>
+
+                                                    </div>
+                                                    <!-- 
+                                                        End Top part Image,Promoted,Exculsive,Resturant Name and Description
+                                                    -->
+
+                                                    <!-- Component of Rating,Average Dilivery Time and Average price for two -->
+                                                    <div class="_3Mn31">
+
+                                                        <!-- Rating -->
+                                                        <div class="_9uwBC wY0my">
+                                                            <span class="icon-star _537e4"></span>
+                                                            <span><i class="zmdi zmdi-star"></i>          0.0</span>
+                                                        </div>
+
+                                                        <!-- Average Dilevery Time -->
+                                                        <div>•</div><div>29 MIN</div><div>•</div>
+
+                                                        <!-- Average Price of two -->
+                                                        <div class="nVWSi">₹250 TWO</div> 
+
+                                                    </div>
+                                                    <!--End Component of Rating,Average Dilivery Time and Average price for two -->
+
+                                                    <!-- Offer Component -->
+                                                    <div class="Zlfdx">
+                                                        <span class="icon-offer-filled _2fujs"></span>
+                                                        <span class="sNAfh"></span>
+                                                         <span class="icon-offer-filled _2fujs"></span>
+                                                    </div>
+                                                    <!--End Offer Component -->
+
+                                                </div>
+
+
+                                            </div>
+                                            <!--End One Resturant content -->
+                                        </a>
+                                    </div>
+                                    <!--End Resturant View -->
+
+                                             
+                                    <div class="_3XX_A a _1HEuF _3FR5S efp8s _3Ztcd _3Mn31 Zlfdx " style="padding-top: 20px;">
+                                    </div>
+                                             
+                                    <div class="_3XX_A a _1HEuF _3FR5S efp8s _3Ztcd _3Mn31 Zlfdx " style="padding-top: 20px;">
+                                    </div>
+                                    
+
+                            </div>
+                        </div>
+                                 <!--
+                    Start Pagination
+                    -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="food__pagination d-flex justify-content-center align-items-center mt--130">
+                                
+                                <li><a href="List-9.html"><i class="zmdi zmdi-chevron-left"></i></a></li>
+
+                                <li ><a href="Resturant-List.html">1</a></li>
+                                    
+                                <li><a href="List-2.html">2</a></li>
+                                    
+                                <li><a href="List-3.html">3</a></li>
+                                    
+                                <li><a href="List-4.html">4</a></li>
+                                    
+                                <li><a href="List-5.html">5</a></li>
+                                    
+                                <li><a href="List-6.html">6</a></li>
+                                    
+                                <li ><a href="List-7.html">7</a></li>
+                                    
+                                <li ><a href="List-8.html">8</a></li>
+                                    
+                                <li><a href="List-9.html">9</a></li>
+                                    
+                                <li class="active"><a href="List-10.html">10</a></li>
+                                
+                                
+                                    
+
+
+                                
+                            </ul>
+                        </div>
+                    </div> 
+                    <!--
+                        End Pagination
+                    -->
+
+                    </div>
+                    <!-- Start of Resturant List -->
+                    
+
+                </div>
+                <!--End Middle Space for displaying all resturant + Top bar - white color -->
+
+
+                <div class="J2YDs">
+                </div>
+                <!-- Left Side Space - Orange Color -->    
+
+            </div>
+            <!-- 
+                 End wrapper for all resturants + Top bar
+            -->
+
+        </div>
+        <!-- End of Resturant Body -->
+           
+        <script>
+
+            // myFunction() displays 'mylocation' and hides 'wrapper' when triggered
+            
+            var request = new XMLHttpRequest
+            // Ajax call to Asynchronously Sort the resturant Based on SortID and Dir
+            // SortID = average price, avgerage dilivery time, rating
+            // Dir = Ascending or Decending order
+            function func(Dir, SortID,Pag) {
+                document.getElementById("myloca").style.display = "block";
+                document.getElementById("myheader").style.display = "none";
+               document.getElementById("wra").style.display = "none";
+               document.getElementById("dav").style.display = "none";
+                //Call to Resturant-List.jsp
+                
+                var url = "Resturant-List.jsp?SortID=" + SortID + "&Dir=" + Dir +"&num=" + Pag;
+
+                //Returns the output of Resturant-List.jsp to 'myloca'
+                try {
+                    request.onreadystatechange = function () {
+                        if (request.readyState == 4) {
+                            var val = request.responseText;
+                            document.getElementById('myloca').innerHTML = val;
+                        }
+                    }//end of function  
+                    request.open("GET", url, true);
+                    request.send();
+                } catch (e) {
+                    alert("Unable to connect to server");
+                }
+            }
+             request = new XMLHttpRequest();
+            // Ajax call to Asynchronously searching of element from search bar 
+            function se(value) {
+                
+                
+                //value = The value to be searched , res = The resturant ID
+                name = value;
+                
+                //alert(name);
+                //Call to Ajax.jsp
+                var url = "ajax.jsp?ResD=" + name ;
+                
+
+                //Returns the output of Ajax.jsp to 'mylocation' 
+                try {
+                    request.onreadystatechange = function () {
+                        if (request.readyState == 4) {
+                            var val = request.responseText;
+                            document.getElementById('myl').innerHTML = val;
+                        }
+                    }//end of function  
+                    request.open("GET", url, true);
+                    request.send();
+                } catch (e) {
+                    alert("Unable to connect to server");
+                }
+            }
+
+            /* $(document).ready(function () {
+             $('.dropdown-submenu a.test').on("click", function (e) {
+             $(this).next('ul').toggle();
+             e.stopPropagation();
+             e.preventDefault();
+             });
+             });*/
+        </script>
+        <!--
+           Linking the script tags
+        -->
+        <script src="./List-10_files/jquery-3.2.1.min.js.download"></script>
+        <script src="./List-10_files/popper.min.js.download"></script>
+        <script src="./List-10_files/bootstrap.min.js(1).download"></script>
+        <script src="./List-10_files/plugins.js.download"></script>
+        <script src="./List-10_files/active.js.download"></script>
+        <script>
+                                                        // myFunction() displays 'mylocation' and hides 'wrapper' when triggered
+                                                        function myFunction() {
+                                                            document.getElementById("wra").style.display = "none";
+                                                            document.getElementById("myl").style.display = "block";
+                                                            
+                                                        }
+        </script>
+    
+
+</div></body></html>
