@@ -1,0 +1,160 @@
+{
+  "images": {
+    "images": [
+      {
+        "id": 1,
+        "Location": "Bangalore",
+        "Client": "Archana & Pramod",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Archana&Pramod/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 2,
+        "Location": "Bangalore",
+        "Client": "Neha & Saurav",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Neha&Saurav/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 3,
+        "Location": "Bangalore",
+        "Client": "Nidhi & Rahul",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Nidhi&Rahul/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 4,
+        "Location": "Bangalore",
+        "Client": "Prerana & Darshan",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Prerana&Darshan/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 5,
+        "Location": "Bangalore",
+        "Client": "Raniya & Uwais",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Raniya&Uwais/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 6,
+        "Location": "Bangalore",
+        "Client": "Sampritha & Vishwa",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Sampritha&Vishwa/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 7,
+        "Location": "Bangalore",
+        "Client": "Samyakk x Melora",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/SamyakkxMelora/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 8,
+        "Location": "Bangalore",
+        "Client": "Shishira & Kishan",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Shishira&Kishan/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 9,
+        "Location": "Bangalore",
+        "Client": "Shivani & Sahil",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Shivani&Sahil/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 10,
+        "Location": "Bangalore",
+        "Client": "Supritha & Abishek",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Supritha&Abishek/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 11,
+        "Location": "Bangalore",
+        "Client": "Syeeds & Mudasir",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Syeeds&Mudasir/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 1,
+        "Location": "Bangalore",
+        "Client": "Archana & Pramod",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Archana&Pramod/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 2,
+        "Location": "Bangalore",
+        "Client": "Neha & Saurav",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Neha&Saurav/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 3,
+        "Location": "Bangalore",
+        "Client": "Nidhi & Rahul",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Nidhi&Rahul/t2.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 4,
+        "Location": "Bangalore",
+        "Client": "Prerana & Darshan",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Prerana&Darshan/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 5,
+        "Location": "Bangalore",
+        "Client": "Raniya & Uwais",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Raniya&Uwais/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 6,
+        "Location": "Bangalore",
+        "Client": "Sampritha & Vishwa",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Sampritha&Vishwa/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 7,
+        "Location": "Bangalore",
+        "Client": "Samyakk x Melora",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/SamyakkxMelora/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 8,
+        "Location": "Bangalore",
+        "Client": "Shishira & Kishan",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Shishira&Kishan/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 9,
+        "Location": "Bangalore",
+        "Client": "Shivani & Sahil",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Shivani&Sahil/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 10,
+        "Location": "Bangalore",
+        "Client": "Supritha & Abishek",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Supritha&Abishek/t1.jpg",
+        "Catogery": "Wedding"
+      },
+      {
+        "id": 11,
+        "Location": "Bangalore",
+        "Client": "Syeeds & Mudasir",
+        "full_src": "https://pictures-genesis-site.s3.ap-south-1.amazonaws.com/Wedding/Syeeds&Mudasir/t1.jpg",
+        "Catogery": "Wedding"
+      }
+    ]
+  }
+}
